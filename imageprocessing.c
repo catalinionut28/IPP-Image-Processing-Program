@@ -13,7 +13,7 @@ void free_mem(int ***x, int lines, int columns) {
     free(x);
 }
 
-// TODO(catalin.vasile2812) Task 1
+
 int ***flip_horizontal(int ***image, int N, int M) {
     int aux = 0;
     for (int i = 0; i < N; i++) {
@@ -29,7 +29,7 @@ int ***flip_horizontal(int ***image, int N, int M) {
     return image;
 }
 
-// TODO(catalin.vasile2812) Task 2
+
 int ***rotate_left(int ***image, int N, int M) {
     int ***p = (int ***)malloc(M * sizeof(int **));
     for (int i = 0; i < M; i++) {
@@ -49,7 +49,7 @@ int ***rotate_left(int ***image, int N, int M) {
     return p;
 }
 
-// TODO(catalin.vasile2812) Task 3
+
 int ***crop(int ***image, int N, int M, int x, int y, int h, int w) {
     int ***m = (int ***)malloc(h * sizeof(int **));
     for (int i = 0; i < h; i++) {
@@ -69,7 +69,7 @@ int ***crop(int ***image, int N, int M, int x, int y, int h, int w) {
     return m;
 }
 
-// TODO(catalin.vasile2812) Task 4
+
 int ***extend(int ***image, int N, int M, int rows, int cols, int new_R, int new_G, int new_B) {
     int linii = N + 2 * rows;
     int coloane = M + 2 * cols;
@@ -101,7 +101,7 @@ int ***extend(int ***image, int N, int M, int rows, int cols, int new_R, int new
     return e;
 }
 
-// TODO(catalin.vasile2812) Task 5
+
 int ***paste(int ***image_dst, int N_dst, int M_dst, int *** image_src, int N_src, int M_src, int x, int y) {
     for (int i = 0; i < N_dst; i++) {
         for (int j = 0; j < M_dst; j++) {
@@ -117,7 +117,7 @@ int ***paste(int ***image_dst, int N_dst, int M_dst, int *** image_src, int N_sr
     return image_dst;
 }
 
-// TODO(catalin.vasile2812) Task 6
+
 int ***apply_filter(int ***image, int N, int M, float **filter, int filter_size) {
     int size = filter_size / 2;
     int ***m = extend(image, N, M, size, size, 0, 0, 0);

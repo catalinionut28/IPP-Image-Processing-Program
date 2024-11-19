@@ -1,4 +1,4 @@
-Image Processing Program
+
 This repository contains a C program designed to perform various image processing tasks. It supports operations like image loading, transformations, filtering, and saving, with functionalities for handling multiple images simultaneously.
 Features
 The program provides the following functionality:
@@ -35,5 +35,5 @@ Build and Run
 Requirements
 GCC or any compatible C compiler.
 bmp.h and imageprocessing.h headers, with their respective implementation files.
-Running
+Running:
 ./interactive
